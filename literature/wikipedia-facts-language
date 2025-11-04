@@ -1,0 +1,44 @@
+Wikipedia ‘facts’ depend on which language you read them in
+By Matt Reynolds
+
+13 December 2016
+
+Russian flag on Ukraine
+Bias is geographical
+
+VASILY MAXIMOV/AFP/Getty Images
+
+Like Facebook and Twitter, Wikipedia could have its own filter bubbles.
+
+A new website lets you uncover geographical biases in Wikipedia articles by tracking down where editors of different languages source their information. Insert the URL of any Wikipedia page into Wikiwhere and the site’s algorithm trawls the web to find out where the references cited in the entry originate from.
+
+Martin Körner and Tatiana Sennikova at the University of Koblenz-Landau, Germany, and his colleagues made the tool to compare how Wikipedia articles about the same topic but in a different language might be influenced by different sources.
+
+Advertisement
+
+
+In the English language version of an article on Russia’s annexation of Crimea, for example, they found that 24 per cent of linked references came from Ukrainian news sources while nearly 20 per cent came from Russian sources. In the German version of the same article, however, the balance tipped, with Russian sources making up ten per cent of the total citations and Ukrainian sources only representing three per cent.
+
+Different truths
+These differences, says Körner, mean that people reading about the same thing in different languages may be confronted with very different versions of the truth. Wikipedia uses bots to undo malicious edits and flag potential hate speech, but volunteer editors are free to source their material from anywhere.
+
+While some variation may be down to the lack of sources available in certain languages, there is no such obvious reason why so few sources in the German version of the Crimea example originate from Ukraine.
+
+To track down a source’s location, Wikiwhere analyses the language, IP address and top level domain of the URL referenced. “Sometimes it’s tricky, because if you look at a bigger news agency they may have a corporate office wherever, but we are more concerned about the country in which that agency is headquartered,” says Körner.
+
+Shane Greenstein at Harvard Business School  has authored several studies on Wikipedia’s reliability, and says that the encyclopedia needs a variety of sources to maintain a neutral perspective and avoid becoming one-sided. “You need multiple editors to debate and identify different points of view, and in the absence of a large supply of those editors Wikipedia won’t perform very well,” he says.
+
+Sources are not necessarily biased just because they come from a certain country, he says, but Wikiwhere could offer a starting point for a more thorough analysis of the reliability of other information sources too, such as online news sites. With the proliferation of fake or biased news on social media, it is increasingly critical that people continue to interrogate the neutrality of fact-focused sites.
+
+“It is not necessarily in the interest of many biased parties to have an independent source of neutral information, so Wikipedia ends up playing a very important role,” says Greenstein.
+
+Journal reference: https://arxiv.org/abs/1612.00985
+
+Topics:
+
+internet
+/
+social media
+Advertisement
+
+

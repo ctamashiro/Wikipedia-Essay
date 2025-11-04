@@ -1,0 +1,23 @@
+% Methodology
+% Be specific enough that someone could reproduce your work
+
+\label{sec:methodology}
+
+% Overview
+Our goal was to examine how the same topics on Wikipedia are represented differently across multiple languages. To achieve this, we developed a Python-based program that uses the Wikipedia API to extract short summaries of topics in English, Japanese, and Spanish. The analysis focused on identifying variations in language use, tone, and emphasis to explore how linguistic and cultural factors may influence content presentation. This approach allowed us to directly compare multilingual outputs for the same subject under consistent retrieval conditions.
+
+\subsection{Data Collection}
+
+We collected data using the Wikipedia API, which allows access to structured article content through simple queries. For each test case, a topic name (such as “Politics,” “Climate Change,” or “History of Japan”) was entered under the \texttt{page} variable, and the program retrieved a 500-character summary. The same topic was then queried in different language editions—English, Japanese, and Spanish—by specifying the appropriate language code. This dataset provided side-by-side textual samples for qualitative comparison. All data were gathered between October and November 2025.
+
+\subsection{Data Processing}
+
+Because the Wikipedia API returns clean text snippets, minimal preprocessing was required. We stored the outputs in local text files for comparison. The main processing step involved aligning the English, Japanese, and Spanish summaries for each topic and reviewing them manually to note differences in phrasing, terminology, and emphasis. We also checked that each summary corresponded to the correct topic and language version. Future iterations of this project may include additional preprocessing, such as translation normalization or tokenization, to support automated linguistic analysis.
+
+\subsection{Analysis Methods}
+
+Our analysis was primarily qualitative. We compared summaries across the three language editions to identify differences in word choice, tone, and focus. Each team member independently reviewed the results, highlighting variations in emphasis (e.g., historical framing, political orientation, or omission of details). These findings were then discussed collectively to determine recurring patterns of linguistic bias. While no computational models were used at this stage, this manual approach provided insight into the types of bias that might later be quantified using natural language processing (NLP) tools such as sentiment or keyword frequency analysis.
+
+\subsection{Ethical Considerations}
+
+All data used in this study were publicly available through the Wikipedia API and complied with \href{https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use}{Wikimedia's Terms of Use}. The project did not involve any private user information or identifiable data. We ensured that all references and excerpts from Wikipedia were properly cited, and that our analysis was limited to observing language patterns for academic and educational purposes.

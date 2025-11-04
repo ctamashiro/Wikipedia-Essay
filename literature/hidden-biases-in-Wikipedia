@@ -1,0 +1,32 @@
+Finding hidden biases in Wikipedia's multilingual content
+New tool analyzes and addresses cultural disparities across language versions, paving the way for more-balanced information
+ByDino Lencioni / Published Jan 9
+Cultural and social biases significantly influence Wikipedia's multilingual content, according to a team of researchers that includes a computer scientist from Johns Hopkins University.
+
+By creating and deploying a new tool called INFOGAP, the researchers used artificial intelligence to look at how biographical information about LGBT people is presented across the English, Russian, and French versions of Wikipedia and found inconsistencies in how they are portrayed.
+
+Key Takeaways
+Artificial intelligence helped researchers find inconsistencies in how LGBT people are portrayed across the English, Russian, and French versions of Wikipedia
+The disparities show how cultural attitudes can influence information and highlight the need for tools to identify and address biases for more equitable knowledge sharing
+The disparities show how deeply cultural attitudes can influence information, emphasizing the need for tools and strategies to identify and address biases for more equitable knowledge sharing, said study team member Anjalie Field, assistant professor in the Whiting School of Engineering's Department of Computer Science, and an affiliate of its Center for Language and Speech Processing.
+
+"Our tool shows how technology can be used to study cultural biases on a large scale," Field said. "Beyond Wikipedia, it can help analyze how different regions or languages present the same topics in the news or other media. We believe educators and policymakers could also use it to identify and address biases in widely used resources, promoting more balanced information."
+
+The team presented its results at the 2024 Conference on Empirical Methods in Natural Language Processing held in November in Miami.
+
+"Our tool shows how technology can be used to study cultural biases on a large scale."
+Anjalie Field
+Assistant professor, Department of Computer Science
+INFOGAP was created to analyze and compare large amounts of text across different languages in a detailed and precise way, identifying factual gaps and imbalances, shedding light on cultural, social, and political influences.
+
+"Many existing methods for studying differences between languages rely on simple measures like the length of the text or the overall tone, which don't provide enough detail to identify specific gaps or inconsistencies," said Field. "INFOGAP solves this problem by matching facts from the same article written in different languages and checking that the information is consistent. This process makes it possible to carefully examine and measure differences in how facts are presented and the tone used across languages, even when dealing with large amounts of data."
+
+The tool showcased its capabilities using LGBTBIOCORPUS, a collection of over 2,700 biographies of LGBT and non-LGBT public figures from English, Russian, and French Wikipedia. The analysis revealed that Russian Wikipedia biographies omitted 77% of the content present in the English versions. Furthermore, entries for LGBT individuals not only omitted more content but also emphasized negative aspects at a higher rate. On average, 50.87% of negative facts about LGBT individuals in Russian Wikipedia matched their English counterparts, compared to 38.53% for non-LGBT biographies, suggesting a significant bias.
+
+Field says this focus on negative details highlights how cultural attitudes and prejudices influence content in different languages.
+
+"By measuring these differences, INFOGAP offers clear evidence of systemic bias, supporting previous findings that Russian content often portrays LGBT topics more negatively than English or French versions," she said.
+
+The team notes that INFOGAP goes beyond only identifying differences; it also provides solutions by pinpointing missing facts or sections across languages, offering editors a clear roadmap for updates. For example, it can flag when positive details about an LGBT figure are missing in Russian or French Wikipedia, enabling those gaps to be addressed. Moreover, the researchers highlight its versatility, noting that it can analyze variations in media, political discussions, and cultural narratives beyond Wikipedia.
+
+Co-authors of the paper include Farhan Samir and Vered Shwartz from the University of British Columbia; and Chan Young Park and Yulia Tsvetkov from the University of Washington.
