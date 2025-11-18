@@ -1,19 +1,28 @@
-% Methodology
-% Be specific enough that someone could reproduce your work
 
-\label{sec:methodology}
+Our project investigates how multilingual Wikipedia articles differ in their presentation of historical topics. While our motivating research question asks how cultural or linguistic factors influence content on Wikipedia, this is too broad to measure directly. Therefore, we operationalize the question by examining three measurable proxies: (1) word count, (2) word choice patterns, and (3) topical emphasis within article summaries. These proxies enable us to observe differences in language usage that may indicate broader cultural framing or editorial tendencies.
 
-% Overview
-Our goal was to examine how the same topics on Wikipedia are represented differently across multiple languages. To achieve this, we developed a Python-based program that uses the Wikipedia API to extract short summaries of topics in English, Japanese, and Spanish. The analysis focused on identifying variations in language use, tone, and emphasis to explore how linguistic and cultural factors may influence content presentation. This approach enabled us to directly compare multilingual outputs for the same subject under consistent retrieval conditions.
+To bridge the gap between the motivating and operationalized questions, we treat each proxy as an observable indicator of deeper concepts such as cultural perspective or linguistic bias. For example, shorter summaries may reflect editorial priorities or content availability, while variations in word choice may reveal differences in how societies frame historical events. Although proxies cannot fully capture the complexity of cultural interpretation, they provide a reproducible foundation for comparative analysis.
 
 \subsection{Data Collection}
 
-We collected data using the Wikipedia API, which provides structured access to article content through simple HTTP queries. For each test case, a topic name (such as “Politics,” “Climate Change,” or “History of Japan”) was entered under the \texttt{page} variable, and the program retrieved a 500-character summary. The same topic was then queried in different language editions—English, Japanese, and Spanish—by specifying the appropriate language code. This dataset provided side-by-side textual samples for qualitative comparison. All data were gathered between October and November 2025.
+Data were collected using the Wikipedia API, which provides structured programmatic access to article content. Our Python script (linked in our GitHub repository) queries the API by specifying a topic name and a corresponding language code. For each historical topic, we retrieved a 500-character summary from the English, Japanese, and Spanish Wikipedia editions. The script stored each summary, along with metadata such as the language and timestamp, into local text files for comparison.
+
+Topics included broad historical themes such as ``World War II,'' ``Industrial Revolution,'' and ``History of Japan.'' All data were collected between October and November 2025 under consistent retrieval conditions to ensure comparability across languages.
 
 \subsection{Data Processing}
 
-Because the Wikipedia API returns clean text snippets, minimal preprocessing was required. We stored the outputs in local text files for comparison. The main processing step involved aligning the English, Japanese, and Spanish summaries for each topic and reviewing them manually to note differences in phrasing, terminology, and emphasis. We also verified that each summary corresponded to the correct topic and language version. Future iterations of this project may include translation normalization or tokenization to support automated linguistic analysis.
+Because the Wikipedia API returns clean text, preprocessing requirements were minimal. Each summary was saved as a separate file and grouped by topic. We verified that the retrieved summaries accurately matched the intended page in each language. For each topic, we aligned the English, Japanese, and Spanish summaries as a triplet to support side-by-side comparison.
+
+To prepare for analysis, we calculated summary word counts and conducted a manual inspection of key vocabulary (e.g., references to dates, political actors, cultural terminology). Future work may incorporate automated preprocessing methods such as translation normalization, tokenization, or part-of-speech tagging to support quantitative linguistic comparison.
 
 \subsection{Analysis Methods}
 
-Our analysis was primarily qualitative. We compared summaries across the three language editions to identify differences in word choice, tone, and focus. Each team member independently reviewed the results, highlighting variations in emphasis (e.g., historical framing, political orientation, or omission of details). These findings were then discussed collectively to determine recurring patterns of linguistic bias. While no computational models were used at this stage, this manual approach provided insight into the types of bias that could later be quantified using natural language processing (NLP) tools such as sentiment or keyword frequency analy
+Our analysis combines proxy-based measurement with qualitative review. For each multilingual summary set, we evaluated:
+
+\begin{itemize}
+    \item \textbf{Word Count (Proxy 1):} Used as a measurable indicator of content depth or editorial emphasis.
+    \item \textbf{Word Choice (Proxy 2):} Identified through recurring nouns, adjectives, and historically loaded terms.
+    \item \textbf{Topical Emphasis (Proxy 3):} Observed via which facts, figures, or contextual details each language highlighted or omitted.
+\end{itemize}
+
+These proxies allowed us to track concrete differences without requiring full article translations. We conducted a manual qualitative comparison to identify patterns such as differing emphasis on causes vs. effects, regional framing, or political neutrality. While this stage did not rely on computational NLP tools, our approach sets the foundation for scalable quantitative analysis such as keyword frequency counts, sentiment analysis, or semantic similarity scoring in future iterations.
